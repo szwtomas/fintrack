@@ -1,0 +1,28 @@
+databaseType = "PostgreSql"
+id = "f604750d-8ca9-476c-9a79-8d96a422f1bf"
+name = "fintrack-db"
+
+[flyway]
+locations = [ "filesystem:migrations" ]
+mixed = true
+outOfOrder = true
+validateMigrationNaming = true
+
+  [flyway.check]
+  majorTolerance = 0
+
+[flywayDesktop]
+developmentEnvironment = "development"
+schemaModel = "schema-model"
+shadowEnvironment = "shadow"
+
+[redgateCompare]
+filterFile = "filter.rgf"
+
+[redgateCompare.postgresql.options.ignores]
+ignoreNewlinesInTextObjects = "off"
+
+[environments.fintrack-db-local]
+url = "jdbc:postgresql://localhost:5435/postgres"
+schemas = [ "public" ]
+displayName = "fintrack-db-local"
