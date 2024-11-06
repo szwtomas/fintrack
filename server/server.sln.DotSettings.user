@@ -1,0 +1,26 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">/Users/szwtomas/Library/Caches/JetBrains/Rider2024.2/resharper-host/temp/Rider/vAny/CoverageData/_server.1285713028/Snapshot/snapshot.utdcvr</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1416a0da_002Dd978_002D4c69_002D9785_002D0ae2da16835f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SessionServiceTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::D125D0E8-060C-4331-B3C4-F6E79FA32F3E::net9.0::Tests.Services.SessionServiceTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2799b1f5_002D43cf_002D488f_002Dbc34_002D0af89aa0a19b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreateSession_ShouldInsertSessionInDb" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::D125D0E8-060C-4331-B3C4-F6E79FA32F3E::net9.0::Tests.Services.SessionServiceTest.CreateSession_ShouldInsertSessionInDb&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b866da5b_002D1420_002D40e2_002D8ede_002D9a6d800835b4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CreateSession_ShouldInsertSessionInDb #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::D125D0E8-060C-4331-B3C4-F6E79FA32F3E::net9.0::Tests.Services.SessionServiceTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::D125D0E8-060C-4331-B3C4-F6E79FA32F3E::net9.0::Tests.Services.AuthServiceTest.HashPassword_ShouldGenerateDifferentAndVerifyWhenAuthenticating&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::D125D0E8-060C-4331-B3C4-F6E79FA32F3E::net9.0::Tests.Services.AuthServiceTest.AuthenticateUser_GivenUserDoesNotExist_ShouldThrowUserNotFoundException&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::D125D0E8-060C-4331-B3C4-F6E79FA32F3E::net9.0::Tests.Services.UserCreationServiceTest.CreateUser_ShouldInsertUserInDb&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::D125D0E8-060C-4331-B3C4-F6E79FA32F3E::net9.0::Tests.Services.UserCreationServiceTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c08be135_002Daf30_002D46e9_002Db11f_002Dbcde4ae7d0b3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SessionServiceTest #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::D125D0E8-060C-4331-B3C4-F6E79FA32F3E::net9.0::Tests.Services.SessionServiceTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

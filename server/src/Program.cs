@@ -1,8 +1,16 @@
+using fintrack.Models;
+using Fintrack.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+builder.Services.AddDbContext<AppDbContext>();
+builder.Services.AddScoped<AuthService>();
+builder.Services.AddScoped<UserCreationService>();
+builder.Services.AddScoped<SessionService>();
 
 var app = builder.Build();
 
