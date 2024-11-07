@@ -12,7 +12,7 @@ interface AuthContextProps {
     user?: User;
     logIn: (email: string, password: string) => Promise<string | undefined>;
     logOut: () => Promise<void>;
-    signUp: (email: string, firstName: string, lastName: string, password: string, gender: string, birthday: string) => Promise<string | undefined>;
+    signUp: (email: string, password: string) => Promise<string | undefined>;
     isInitialAuthLoading: boolean;
     isAuthLoading: boolean;
 }
