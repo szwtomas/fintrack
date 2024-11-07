@@ -23,11 +23,11 @@ public class AuthController(
             var sessionToken = Request.Cookies[SessionCookieName];
             if (sessionToken == null)
             {
-                return Unauthorized("unauthorized");
+                return Unauthorized();
             }
 
             var session = await sessionService.GetSession(sessionToken);
-            if (session == null)
+            if (session == null || !session.IsValid())
             {
                 return Unauthorized();
             }
@@ -94,7 +94,7 @@ public class AuthController(
             });
 
             var dto = new UserDto { UserId = user.UserId, Email = user.Email };
-            return Ok(dto);
+            return StatusCode(201, dto);
         }
         catch (UserAlreadyExistsException e)
         {

@@ -1,4 +1,6 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AAppendPrepend_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2024_002E2_003Fresharper_002Dhost_003FSourcesCache_003Feca22a5da28b7b1c823a3c43e6a2d3bf3a35879628e6e3637b2b3f829ef14d_003FAppendPrepend_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AIResponseCookies_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2024_002E2_003Fresharper_002Dhost_003FSourcesCache_003Fe6575ae8d8fc584ae3425dcf60369f8420195e63f579c5d619334e4805d421_003FIResponseCookies_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">/Users/szwtomas/Library/Caches/JetBrains/Rider2024.2/resharper-host/temp/Rider/vAny/CoverageData/_server.1285713028/Snapshot/snapshot.utdcvr</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1416a0da_002Dd978_002D4c69_002D9785_002D0ae2da16835f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SessionServiceTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
@@ -11,13 +13,7 @@
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b866da5b_002D1420_002D40e2_002D8ede_002D9a6d800835b4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CreateSession_ShouldInsertSessionInDb #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::D125D0E8-060C-4331-B3C4-F6E79FA32F3E::net9.0::Tests.Services.SessionServiceTest&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::D125D0E8-060C-4331-B3C4-F6E79FA32F3E::net9.0::Tests.Services.AuthServiceTest.HashPassword_ShouldGenerateDifferentAndVerifyWhenAuthenticating&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::D125D0E8-060C-4331-B3C4-F6E79FA32F3E::net9.0::Tests.Services.AuthServiceTest.AuthenticateUser_GivenUserDoesNotExist_ShouldThrowUserNotFoundException&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::D125D0E8-060C-4331-B3C4-F6E79FA32F3E::net9.0::Tests.Services.UserCreationServiceTest.CreateUser_ShouldInsertUserInDb&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::D125D0E8-060C-4331-B3C4-F6E79FA32F3E::net9.0::Tests.Services.UserCreationServiceTest&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
+  &lt;Project Location="/Users/szwtomas/Projects/fintrack/server/Tests" Presentation="&amp;lt;Tests&amp;gt;" /&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c08be135_002Daf30_002D46e9_002Db11f_002Dbcde4ae7d0b3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SessionServiceTest #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
