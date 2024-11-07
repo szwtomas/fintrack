@@ -1,4 +1,7 @@
-import React, {Context, createContext, useState} from "react";
+import React, {Context, createContext, useEffect, useState} from "react";
+import * as authApi from "../api/authApi.ts";
+import {InvalidCredentialsException} from "../api/authApi.ts";
+import {LogInInvalidCredentialsError, LogInUnexpectedError, SignUpUnexpectedError} from "../errors/errors.ts";
 
 export interface User {
     userId: number;
@@ -35,16 +38,58 @@ export const AuthProvider: React.FC<AuthProviderProps> = (props) => {
     const [authLoading, setAuthLoading] = useState<boolean>(false);
 
     async function logIn(email: string, password: string): Promise<string | undefined> {
-        return undefined;
+        try {
+            setAuthLoading(true);
+            const userAuthenticated = await authApi.logIn(email, password);
+            setUser(userAuthenticated);
+        } catch (err) {
+            console.error("Error logging in", err);
+            if (err instanceof InvalidCredentialsException) {
+                return LogInInvalidCredentialsError;
+            } else {
+                return LogInUnexpectedError;
+            }
+        } finally {
+            setAuthLoading(false);
+        }
     }
 
     async function logOut(): Promise<void> {
-
+        try {
+            await authApi.logOut();
+            setUser(undefined);
+        } catch (err) {
+            console.error("Error logging out", err);
+        }
     }
 
-    async function signUp(email: string, firstName: string, lastName: string, password: string, gender: string, birthday: string): Promise<string | undefined> {
-        return undefined;
+    async function signUp(email: string, password: string): Promise<string | undefined> {
+        try {
+            setAuthLoading(true);
+            await authApi.signUp(email, password);
+            await logIn(email, password);
+            return undefined;
+        } catch (err) {
+            console.error(err);
+            return SignUpUnexpectedError;
+        } finally {
+            setAuthLoading(false);
+        }
     }
+
+    useEffect(() => {
+        setInitialAuthLoading(true);
+
+        async function checkIsAuthenticated(): Promise<boolean> {
+            const userAuthenticated = await authApi.checkAuthenticated();
+            setUser(userAuthenticated);
+            return userAuthenticated !== undefined;
+        }
+
+        checkIsAuthenticated()
+            .catch((error) => console.error("Error checking if user is authenticated", error))
+            .finally(() => setInitialAuthLoading(false));
+    }, []);
 
 
     return (
