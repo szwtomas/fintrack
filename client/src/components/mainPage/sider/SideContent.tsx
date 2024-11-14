@@ -42,7 +42,7 @@ export function SideContent() {
                 alignItems: "center",
                 height: "70px"
             }}>
-                <h1 style={{fontSize: "26px"}}>OV</h1>
+                <h1 style={{fontSize: "26px"}}>FinTrack</h1>
             </div>
 
             <Menu

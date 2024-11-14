@@ -42,7 +42,7 @@ export function SignUpPage() {
                     </Content>
                 </Layout>
                 <Footer style={{textAlign: "center", backgroundColor: "white"}}>
-                    OV ©{new Date().getFullYear()} Created by Tomás Szwarcberg
+                    FinTrack ©{new Date().getFullYear()} Created by Tomás Szwarcberg
                 </Footer>
             </Layout>
         </>
