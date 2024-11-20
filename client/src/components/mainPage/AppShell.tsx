@@ -29,6 +29,7 @@ export function AppShell(props: AppShellProps) {
                             borderRadius: borderRadiusLG,
                             width: "100%",
                             height: "100%",
+                            overflowY: "scroll",
                         }}
                     >
                         {props.content}

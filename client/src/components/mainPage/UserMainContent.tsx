@@ -5,6 +5,7 @@ import {createHoldingGroup, HoldingGroup} from "../../api/holdingGroupApi.ts";
 import {CreateHoldingGroupModal} from "./holdingGroups/CreateHoldingGroupModal.tsx";
 import {Holding} from "../../api/holdingApi.ts";
 import {getHoldingGroupsWithHoldings} from "../../services/holdingGroupWithHoldingsService.ts";
+import {HoldingGroupsCollapse} from "./holdingGroups/HoldingGroupsCollapse.tsx";
 
 export interface HoldingGroupWithHoldings extends HoldingGroup {
     holdings: Holding[];
@@ -66,9 +67,7 @@ export function UserMainContent() {
                 holdingGroupName={newHoldingGroupName}
                 setHoldingGroupName={setNewHoldingGroupName}
             />
-            {holdingGroups.map((group) => {
-                return <div>{group.name}</div>;
-            })}
+            <HoldingGroupsCollapse />
         </div>
     );
 }
