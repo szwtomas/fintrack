@@ -25,7 +25,7 @@ export async function createHoldingGroup(name: string): Promise<void> {
 }
 
 export function getHoldingsForHoldingGroup(holdingGroupId: number): Promise<Holding[]> {
-    return makeGet(`/holding-group/${holdingGroupId}/holdings`)
+    return makeGet(`/holding-group/${holdingGroupId}/holding`)
         .then((res) => {
             if (!res.ok) {
                 throw new Error("Error fetching holdings");

@@ -67,7 +67,7 @@ export function UserMainContent() {
                 holdingGroupName={newHoldingGroupName}
                 setHoldingGroupName={setNewHoldingGroupName}
             />
-            <HoldingGroupsCollapse />
+            <HoldingGroupsCollapse holdingGroups={holdingGroups}/>
         </div>
     );
 }
